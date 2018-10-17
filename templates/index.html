@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LEDランプを点滅</h1>
+    <p>LEDランプの点滅を下のボタンから操作できます。</p>
+
+    {% if LEDStatus %}
+        <!-- <button formaction="/off", formmethod="POST">オフ</button> -->
+        <a href="/off">off</a>
+    {% else %}
+        <!-- <button formaction="/on" formmethod="POST">オン</button> -->
+        <a href="/on">on</a>
+    {% endif %}
+</body>
+</html>
